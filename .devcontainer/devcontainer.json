@@ -1,0 +1,33 @@
+{
+  "name": "react-ts",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "front",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [3000],
+  "shutdownAction": "stopCompose",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2.5.3": {
+      "upgradePackages": "true"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-vscode-remote.remote-containers",
+        "ms-azuretools.vscode-docker",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "donjayamanne.githistory",
+        "github.vscode-github-actions",
+        "GitHub.vscode-pull-request-github",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install",
+  "remoteUser": "kaf"
+}
