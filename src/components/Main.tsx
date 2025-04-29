@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BlackButton from './buttons/Button';
+import LogoSVG from 'components/icons/LogoSVG';
 
 interface Props {}
 
 export const Main = ({}: Props) => {
   return (
-    <div className="App-header main-content">
+    <div className="main-content">
       <BlackButton
         children="Создать проект"
         style={{
@@ -16,6 +17,7 @@ export const Main = ({}: Props) => {
         }}
         onClick={() => console.log('Кнопка нажата')}
       />
+      <LogoSVG />
       <p>
         Edit <code>src/components/Main.tsx</code> and save to reload.
       </p>

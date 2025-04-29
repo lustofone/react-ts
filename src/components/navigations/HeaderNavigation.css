@@ -1,0 +1,39 @@
+.container {
+  background: black;
+  border: 1px solid black;
+  border-radius: 100px;
+}
+
+.wrapper {
+  display: flex;
+  margin: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper a {
+  text-decoration: none;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  color: white;
+}
+.wrapper a > span {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -1%;
+  margin-left: 16px;
+  font-family: 'Special Gothic Expanded One', 'Open Sans', sans-serif;
+}
+
+nav {
+  padding: 0px 48px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+nav ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}

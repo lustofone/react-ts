@@ -1,41 +1,22 @@
 import React from 'react';
-import BlackButton from './buttons/Button';
-import './Header.module.css';
-import useScrollTo from '../hooks/useScrollTo';
+
+import './Header.css';
 import Icon from 'components/icons/IconSellector';
+import HeaderNavigation from 'components/navigations/HeaderNavigation';
 
 function Header() {
-  const scrollTo = useScrollTo();
+  const navLinks = [
+    { label: 'Проекты', href: '/projects' },
+    { label: 'Специалисты', href: '/specialists' },
+    { label: 'О нас', href: '/about' },
+  ];
+
   return (
     <header className="header">
-      <a href="#">
-        <Icon name="ball" width={32} />
-      </a>
-      <a href="#" className="bus">
-        <Icon name={'bus'} width={32} />
-      </a>
-      <a href="#" className="camera">
-        <Icon name={'camera'} width={32} />
-      </a>
-      <a href="#" className="clock">
-        <Icon name={'clock'} width={32} />
-      </a>
-      <a href="#" className="mac">
-        <Icon name={'mac'} width={32} />
-      </a>
-      <a href="#" className="star">
-        <Icon name={'star'} width={32} />
-      </a>
-      <BlackButton
-        children="Test"
-        style={{
-          width: '56px',
-          height: '56px',
-        }}
-        onClick={() => scrollTo('footer')}
-      />
+      <HeaderNavigation links={navLinks} />
+
       <a href="#" className="exit">
-        <Icon name={'exit'} width={56} />
+        <Icon name={'exit'} width={64} />
       </a>
     </header>
   );

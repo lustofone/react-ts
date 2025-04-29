@@ -2,3 +2,7 @@ header {
   display: flex;
   align-items: center;
 }
+
+header .exit {
+  margin-left: auto;
+}
