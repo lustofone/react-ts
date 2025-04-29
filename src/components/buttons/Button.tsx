@@ -1,4 +1,5 @@
 import React from 'react';
+import './Button.module.css';
 
 interface BlackButtonProps {
   style?: React.CSSProperties;
@@ -6,9 +7,13 @@ interface BlackButtonProps {
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
-const BlackButton: React.FC<BlackButtonProps> = ({ style, children, onClick }) => {
+const BlackButton: React.FC<BlackButtonProps> = ({
+  style,
+  children,
+  onClick,
+}) => {
   return (
-    <button className="button bg-black" style={style} onClick={onClick}>
+    <button className="button" style={style} onClick={onClick}>
       {children}
     </button>
   );

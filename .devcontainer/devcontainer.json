@@ -24,7 +24,8 @@
         "github.vscode-github-actions",
         "GitHub.vscode-pull-request-github",
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "dsznajder.es7-react-js-snippets"
       ]
     }
   },

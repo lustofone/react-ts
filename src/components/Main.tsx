@@ -1,12 +1,16 @@
 import React from 'react';
-import BlackButton from './buttons/BlackButton';
+import { Link } from 'react-router-dom';
+import BlackButton from './buttons/Button';
 
-function Main() {
+interface Props {}
+
+export const Main = ({}: Props) => {
   return (
     <div className="App-header main-content">
       <BlackButton
         children="Создать проект"
         style={{
+          background: '#fff',
           width: '200px',
           height: '48px',
         }}
@@ -25,6 +29,4 @@ function Main() {
       </a>
     </div>
   );
-}
-
-export default Main;
+};
