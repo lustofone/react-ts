@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/react-ts/static/css/main.bafa636a.css",
-    "main.js": "/react-ts/static/js/main.41fb3bf8.js",
+    "main.css": "/react-ts/static/css/main.2505c48c.css",
+    "main.js": "/react-ts/static/js/main.ee14d7f7.js",
+    "static/media/mission-bg.png": "/react-ts/static/media/mission-bg.b4a39fc29ff983f8d103.png",
     "index.html": "/react-ts/index.html",
-    "main.bafa636a.css.map": "/react-ts/static/css/main.bafa636a.css.map",
-    "main.41fb3bf8.js.map": "/react-ts/static/js/main.41fb3bf8.js.map"
+    "main.2505c48c.css.map": "/react-ts/static/css/main.2505c48c.css.map",
+    "main.ee14d7f7.js.map": "/react-ts/static/js/main.ee14d7f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.bafa636a.css",
-    "static/js/main.41fb3bf8.js"
+    "static/css/main.2505c48c.css",
+    "static/js/main.ee14d7f7.js"
   ]
 }
