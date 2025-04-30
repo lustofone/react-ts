@@ -1,6 +1,7 @@
 header {
   display: flex;
   align-items: center;
+  padding: 24px 0px;
 }
 
 header .exit {

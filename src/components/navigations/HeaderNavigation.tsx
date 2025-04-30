@@ -8,7 +8,7 @@ interface HeaderNavigationProps {
 
 const HeaderNavigation: React.FC<HeaderNavigationProps> = ({ links }) => {
   return (
-    <div className="header container">
+    <div className="container">
       <div className="wrapper">
         <a href="/">
           <Icon name="logo" width={40} />
