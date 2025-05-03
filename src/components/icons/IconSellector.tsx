@@ -7,6 +7,7 @@ import IconMac from './ComMacOldSVG';
 import IconStar from './StarSVG';
 import IconExit from './ExitSVG';
 import IconLogo from './LogoSVG';
+import IconCalendar from './Calendar';
 
 type IconName =
   | 'logo'
@@ -16,7 +17,8 @@ type IconName =
   | 'camera'
   | 'clock'
   | 'mac'
-  | 'star';
+  | 'star'
+  | 'calendar';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
   name: IconName;
@@ -33,6 +35,8 @@ function Icon({ name, className, width }: IconProps) {
     return <IconClock className={className} width={width} />;
   if (name === 'mac') return <IconMac className={className} width={width} />;
   if (name === 'star') return <IconStar className={className} width={width} />;
+  if (name === 'calendar')
+    return <IconCalendar className={className} width={width} />;
   return <svg></svg>;
 }
 

@@ -1,0 +1,41 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-grow: 1;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.project-card:hover {
+  border: 1px solid #5677fc;
+  background-color: #e8eeff;
+  cursor: pointer;
+}
+
+.project-card .schedule {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+  margin: 0px 32px;
+  margin-top: 24px;
+}
+
+.project-card .project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0px 32px;
+}
+
+.project-card .project-info .participants {
+  display: flex;
+  gap: 8px;
+}
+
+.project-card .request {
+  margin: 0px 32px;
+  margin-bottom: 24px;
+}

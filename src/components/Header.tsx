@@ -12,7 +12,7 @@ function Header() {
   ];
 
   return (
-    <header className="header">
+    <header className="header" id="header">
       <HeaderNavigation links={navLinks} />
 
       <a href="#" className="exit">
