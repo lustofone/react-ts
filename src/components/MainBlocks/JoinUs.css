@@ -1,0 +1,40 @@
+.join-us {
+  display: flex;
+  border-radius: 20px;
+  background-color: #8baaff;
+  margin-top: 160px;
+  overflow: hidden;
+}
+
+.join-us .content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 56px;
+  margin-left: 56px;
+}
+
+.join-us .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.join-us .content .text .call {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1%;
+}
+
+.join-us .content .text .description {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.join-us .join-us-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
