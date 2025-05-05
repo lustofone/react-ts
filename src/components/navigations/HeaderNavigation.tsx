@@ -1,6 +1,5 @@
 import React from 'react';
-import Icon from 'components/icons/IconSellector';
-import './HeaderNavigation.css';
+import s from './HeaderNavigation.module.css';
 
 interface HeaderNavigationProps {
   links?: { label: string; href: string }[];
@@ -8,25 +7,19 @@ interface HeaderNavigationProps {
 
 const HeaderNavigation: React.FC<HeaderNavigationProps> = ({ links }) => {
   return (
-    <div className="container">
-      <div className="wrapper">
-        <a href="/">
-          <Icon name="logo" width={40} />
-          <span>codepet</span>
-        </a>
-        {links && (
-          <nav>
-            <ul>
-              {links.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href}>{link.label}</a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        )}
-      </div>
-    </div>
+    <>
+      {links && (
+        <nav className={s.nav}>
+          <ul className={s.ul}>
+            {links.map((link, index) => (
+              <li key={index}>
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+    </>
   );
 };
 

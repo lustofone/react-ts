@@ -1,0 +1,22 @@
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: auto;
+}
+
+.nav {
+  color: #94a3b8;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 16px;
+}

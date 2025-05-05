@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper a {
+  text-decoration: none;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  color: inherit;
+}
+
+.wrapper a > span {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin-left: 16px;
+  font-family: 'Special Gothic Expanded One', 'Open Sans', sans-serif;
+}
