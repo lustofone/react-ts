@@ -14,13 +14,17 @@ function Header() {
 
   return (
     <header className={s.header} id="header">
-      <div className={s.container}>
-        <ProjectLogo></ProjectLogo>
-        <HeaderNavigation links={navLinks} />
+      <div className={`main_container ${s.header_container}`}>
+        <div className={s.header_navigation}>
+          <ProjectLogo></ProjectLogo>
+          <HeaderNavigation links={navLinks} />
+        </div>
+        <div className={s.exit_button}>
+          <a href="#" className={s.exit_link}>
+            <Icon name={'exit'} width={64} />
+          </a>
+        </div>
       </div>
-      <a href="#" className={s.exit}>
-        <Icon name={'exit'} />
-      </a>
     </header>
   );
 }

@@ -1,10 +1,14 @@
 .header {
-  display: flex;
-  align-items: center;
   padding: 24px 0px;
 }
 
-.container {
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_navigation {
   background: black;
   border: 1px solid black;
   border-radius: 100px;
@@ -14,7 +18,11 @@
   justify-content: center;
 }
 
-.exit {
+.exit_button {
   margin-left: auto;
-  width: 64px;
+  display: inline-flex;
+}
+
+.exit_link {
+  display: inline-flex;
 }

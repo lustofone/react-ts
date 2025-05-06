@@ -1,5 +1,5 @@
 import React from 'react';
-import 'components/Footer.css';
+import s from './Footer.module.css';
 import { ReactComponent as VKLogo } from 'assets/images/vk.svg';
 import { ReactComponent as TGLogo } from 'assets/images/tg.svg';
 import ProjectLogo from './ProjectLogo';
@@ -22,24 +22,26 @@ function Footer() {
     { label: 'code_pet@gmail.com', href: 'mailto:code_pet@gmail.com' },
   ];
   return (
-    <div className="footer" id="footer">
-      <ProjectLogo></ProjectLogo>
-      <div className="content">
-        <FooterNavigation links={navlinks}>Навигация</FooterNavigation>
-        <FooterNavigation links={conditionslinks}>Условия</FooterNavigation>
-        <div className="contacts">
-          <FooterNavigation links={contactslinks}>Контакты</FooterNavigation>
-          <div className="social">
-            <a href="https://vk.com/code_pet_oficial">
-              <VKLogo width="40" />
-            </a>
-            <a href="https://t.me/code_pet_oficial">
-              <TGLogo width="40" />
-            </a>
+    <footer className={s.footer} id="footer">
+      <div className={`main_container ${s.footer_container}`}>
+        <ProjectLogo></ProjectLogo>
+        <div className={s.footer_content}>
+          <FooterNavigation links={navlinks}>Навигация</FooterNavigation>
+          <FooterNavigation links={conditionslinks}>Условия</FooterNavigation>
+          <div className={s.contacts}>
+            <FooterNavigation links={contactslinks}>Контакты</FooterNavigation>
+            <div className={s.social}>
+              <a href="https://vk.com/code_pet_oficial">
+                <VKLogo width="40" />
+              </a>
+              <a href="https://t.me/code_pet_oficial">
+                <TGLogo width="40" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

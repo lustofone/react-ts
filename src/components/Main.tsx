@@ -2,15 +2,17 @@ import React from 'react';
 import Mission from './MainBlocks/Mission';
 import ActualProjects from './MainBlocks/ActualProjects';
 import JoinUs from './MainBlocks/JoinUs';
-import './Main.css';
+import s from './Main.module.css';
 
 function Main() {
   return (
-    <div className="main-content">
-      <Mission></Mission>
-      <ActualProjects></ActualProjects>
-      <JoinUs></JoinUs>
-    </div>
+    <main className={s.main}>
+      <div className="main_container">
+        <Mission></Mission>
+        <ActualProjects></ActualProjects>
+        <JoinUs></JoinUs>
+      </div>
+    </main>
   );
 }
 

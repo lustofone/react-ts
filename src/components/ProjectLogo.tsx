@@ -6,7 +6,7 @@ const ProjectLogo = () => {
   return (
     <div className={s.wrapper}>
       <a href="/">
-        <Icon name="logo" width={40} />
+        <Icon name="logo" width={48} />
         <span>codepet</span>
       </a>
     </div>

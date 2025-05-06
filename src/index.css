@@ -17,8 +17,14 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 100%;
 }
 
 #root {
   width: 100%;
+}
+
+.main_container {
+  max-width: 1160px;
+  margin: 0 auto;
 }
