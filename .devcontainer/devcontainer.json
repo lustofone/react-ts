@@ -7,9 +7,15 @@
   "shutdownAction": "stopCompose",
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2.5.3": {
+      "installZsh": "false",
+      "installOhMyZsh": "false",
+      "installOhMyZshConfig": "false",
       "upgradePackages": "true"
     }
   },
+  "mounts": [
+    "type=bind,source=${env:HOME}${env:USERPROFILE}/.ssh,target=/home/${localEnv:USER}/.ssh,readonly"
+  ],
   "customizations": {
     "vscode": {
       "settings": {
@@ -30,5 +36,5 @@
     }
   },
   "postCreateCommand": "npm install",
-  "remoteUser": "kaf"
+  "remoteUser": "${localEnv:USER}"
 }
