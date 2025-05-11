@@ -1,11 +1,15 @@
 import React from 'react';
+import useFetchData from 'hooks/useFetchData';
 import { Data } from 'interfaces';
 
-interface DataDisplayProps {
-  data: Data | null;
-}
+const DataDisplay: React.FC = () => {
+  const { data, loading, error } = useFetchData<Data>(
+    'https://devcodepet.tw1.ru/api/v1/counter/'
+  );
 
-const DataDisplay: React.FC<DataDisplayProps> = ({ data }) => {
+  if (loading) return <div>Loading...</div>;
+  if (error) console.log(error, 'error');
+
   return (
     <div className="heroes">
       <div className="projects">
