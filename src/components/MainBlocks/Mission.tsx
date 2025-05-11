@@ -1,8 +1,18 @@
 import React from 'react';
 import 'components/MainBlocks/Mission.css';
 import Button from 'components/buttons/Button';
+import useFetchData from 'hooks/useFetchData';
+import { Data } from 'interfaces';
+import DataDisplay from './DataDisplays';
 
 function Mission() {
+  const { data, loading, error } = useFetchData<Data>(
+    'https://devcodepet.tw1.ru/api/v1/counter/'
+  );
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+
   return (
     <div className="mission">
       <div className="wrapper">
@@ -22,16 +32,7 @@ function Mission() {
             <div className="button-container">
               <Button style={{ height: '48px' }}>Создать проект</Button>
             </div>
-            <div className="heroes">
-              <div className="projects">
-                <div className="count">1714</div>
-                <div className="items">проектов</div>
-              </div>
-              <div className="participiants">
-                <div className="count">747</div>
-                <div className="items">участников</div>
-              </div>
-            </div>
+            <DataDisplay data={data} />
           </div>
         </div>
       </div>
