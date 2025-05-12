@@ -1,12 +1,7 @@
 import * as React from 'react';
 
-const SvgIcon: React.FC<React.SVGProps<SVGElement>> = (props) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={props.width}
-    height={props.height}
-    viewBox="0 0 50 50"
-  >
+const SvgIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" {...props}>
     <path d="M12 0C5.438 0 3 2.168 3 8v33c0 1.36.398 2.34 1 3.063V47c0 1.652 1.348 3 3 3h4c1.652 0 3-1.348 3-3v-1h22v1c0 1.652 1.348 3 3 3h4c1.652 0 3-1.348 3-3v-2.937c.602-.723 1-1.704 1-3.063V9c0-4.355-.54-9-7-9Zm3 4h21a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H15c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1m-4 7h28q3 0 3 3v12c0 2-1.953 2.938-3 2.938L11 29q-3 0-3-3V14q0-3 3-3m-9 1c-1.102 0-2 .898-2 2v8c0 1.102.898 2 2 2Zm46 0v12c1.105 0 2-.898 2-2v-8c0-1.102-.895-2-2-2M11.5 34a3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 1 0-7m27 0a3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 1 0-7"></path>
   </svg>
 );

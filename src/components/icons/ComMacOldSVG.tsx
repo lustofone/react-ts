@@ -1,12 +1,7 @@
 import * as React from 'react';
 
-const SvgIcon: React.FC<React.SVGProps<SVGElement>> = (props) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={props.width}
-    height={props.height}
-    viewBox="0 0 64 64"
-  >
+const SvgIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" {...props}>
     <g
       id="General"
       fill="none"

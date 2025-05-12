@@ -1,12 +1,11 @@
 import * as React from 'react';
 
-const SvgIcon: React.FC<React.SVGProps<SVGElement>> = (props) => (
+const SvgIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={props.width}
-    height={props.height}
     fill="none"
     viewBox="0 0 40 40"
+    {...props}
   >
     <g id="Logo">
       <path

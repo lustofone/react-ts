@@ -1,15 +1,14 @@
 import * as React from 'react';
 
-const SvgIcon: React.FC<React.SVGProps<SVGElement>> = (props) => (
+const SvgIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
     id="Layer_1"
     fill="#000"
-    width={props.width}
-    height={props.height}
     version="1.1"
     viewBox="0 0 508 508"
+    {...props}
   >
     <g id="SVGRepo_iconCarrier">
       <path d="M451.65 0H56.45C25.35 0 .05 25.3.05 56.4v395.1c0 31.2 25.3 56.5 56.4 56.5h395.1c31.1 0 56.4-25.3 56.4-56.4V56.4c.1-31.1-25.2-56.4-56.3-56.4m28 239.8h-28.4c-7.8 0-14.1 6.3-14.1 14.1s6.3 14.1 14.1 14.1h28.4v183.4c.2 15.7-12.5 28.4-28 28.4h-183.5v-28.4c0-7.8-6.3-14.1-14.1-14.1s-14.1 6.3-14.1 14.1v28.4H56.45c-15.6 0-28.2-12.7-28.2-28.2V268.1h28.4c7.8 0 14.1-6.3 14.1-14.1s-6.3-14.1-14.1-14.1h-28.4V56.4c0-15.6 12.7-28.2 28.2-28.2h183.4v28.4c0 7.8 6.3 14.1 14.1 14.1s14.1-6.3 14.1-14.1V28.2h183.4c15.6 0 28.2 12.7 28.2 28.2z"></path>
