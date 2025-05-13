@@ -1,8 +1,15 @@
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
 .project-card {
   display: flex;
+  flex: 0 0 calc((100% - 2 * 32px) / 3);
   flex-direction: column;
   gap: 24px;
-  flex-grow: 1;
+  box-sizing: border-box;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
 }
@@ -38,4 +45,8 @@
 .project-card .request {
   margin: 0px 32px;
   margin-bottom: 24px;
+}
+
+.project-card .date {
+  font-size: clamp(1rem, 2.5% + 0.6rem, 1.2rem);
 }

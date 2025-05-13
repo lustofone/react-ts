@@ -23,7 +23,8 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
   const formatDate = (dateString: string): string => {
     const options: Intl.DateTimeFormatOptions = {
       day: 'numeric',
-      month: 'long',
+      month: 'short',
+      year: 'numeric',
     };
     return new Date(dateString).toLocaleDateString('ru-RU', options);
   };
