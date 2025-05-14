@@ -3,22 +3,8 @@ import 'components/MainBlocks/ProjectCard.css';
 import Icon from 'components/icons/IconSellector';
 import { IActualProject } from 'interfaces';
 
-interface Props {
-  project: IActualProject;
-}
-
-const ProjectCard: React.FC<Props> = ({ project }) => {
-  const {
-    id,
-    name,
-    started,
-    ended,
-    directions,
-    project_specialists,
-    count,
-    level,
-    is_required,
-  } = project;
+const ProjectCard: React.FC<{ project: IActualProject }> = ({ project }) => {
+  const { name, started, ended, directions, project_specialists } = project;
 
   const formatDate = (dateString: string): string => {
     const options: Intl.DateTimeFormatOptions = {
