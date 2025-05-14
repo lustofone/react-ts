@@ -5,7 +5,7 @@ import ProjectCard from './ProjectCard';
 import useFetchData from 'hooks/useFetchData';
 import { IActualProjects } from 'interfaces';
 
-const ActualProjects: React.FC = () => {
+const ActualProjects = () => {
   const { data, loading, error } = useFetchData<IActualProjects>(
     'https://devcodepet.tw1.ru/api/v1/projects/preview_main/'
   );

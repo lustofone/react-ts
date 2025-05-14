@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import './App.css';
 import React from 'react';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
@@ -12,6 +12,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

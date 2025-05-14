@@ -5,7 +5,7 @@ import Icon from 'components/icons/IconSellector';
 import HeaderNavigation from 'components/navigations/HeaderNavigation';
 import ProjectLogo from './ProjectLogo';
 
-function Header() {
+const Header = () => {
   const navLinks = [
     { label: 'Проекты', href: '/projects' },
     { label: 'Специалисты', href: '/specialists' },
@@ -27,6 +27,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

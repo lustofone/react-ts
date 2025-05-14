@@ -3,7 +3,7 @@ import 'components/MainBlocks/Mission.css';
 import Button from 'components/buttons/Button';
 import DataDisplay from './DataDisplays';
 
-function Mission() {
+const Mission = () => {
   return (
     <div className="mission">
       <div className="wrapper">
@@ -29,6 +29,6 @@ function Mission() {
       </div>
     </div>
   );
-}
+};
 
 export default Mission;

@@ -2,7 +2,7 @@ import React from 'react';
 import useFetchData from 'hooks/useFetchData';
 import { Data } from 'interfaces';
 
-const DataDisplay: React.FC = () => {
+const DataDisplay = () => {
   const { data, loading, error } = useFetchData<Data>(
     'https://devcodepet.tw1.ru/api/v1/counter/'
   );

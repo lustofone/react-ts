@@ -4,7 +4,7 @@ import ActualProjects from './MainBlocks/ActualProjects';
 import JoinUs from './MainBlocks/JoinUs';
 import s from './Main.module.css';
 
-function Main() {
+const Main = () => {
   return (
     <main className={s.main}>
       <div className="main_container">
@@ -14,6 +14,6 @@ function Main() {
       </div>
     </main>
   );
-}
+};
 
 export default Main;

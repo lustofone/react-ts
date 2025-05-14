@@ -5,7 +5,7 @@ import { ReactComponent as TGLogo } from 'assets/images/tg.svg';
 import ProjectLogo from './ProjectLogo';
 import FooterNavigation from './navigations/FooterNavigation';
 
-function Footer() {
+const Footer = () => {
   const navlinks = [
     { label: 'О нас', href: '/about' },
     { label: 'Проекты', href: '/projects' },
@@ -43,6 +43,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
