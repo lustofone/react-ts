@@ -3,6 +3,25 @@ import 'components/MainBlocks/ProjectCard.css';
 import Icon from 'components/icons/IconSellector';
 import { IActualProject } from 'interfaces';
 
+const specializationColors: { [key: string]: string } = {
+  Software: '#FF5733',
+  Frontend: '#FF5733',
+  Backend: '#33FF57',
+  DevOps: '#3357FF',
+  Fullstack: '#3357FF',
+  'Automation QA': '#F3FF33',
+  'Manual QA': '#F6BD60',
+  'Performance QA': '#F3FF33',
+  'UI/UX Designer': '#FF33F3',
+  Modile: '#FF33F3',
+  'System Administration': '#FF33F3',
+  'Graphic Designer': '#FF33F3',
+  'Project Manager': '#FF33F3',
+  'Systems Analyst': '#FF33F3',
+  'Business Analyst': '#FF33F3',
+  'Data Analyst': '#FF33F3',
+};
+
 const ProjectCard: React.FC<{ project: IActualProject }> = ({ project }) => {
   const { name, started, ended, directions, project_specialists } = project;
 
@@ -29,12 +48,25 @@ const ProjectCard: React.FC<{ project: IActualProject }> = ({ project }) => {
         <div className="project-name">{name}</div>
         <div className="project-direction">{directions[0].name}</div>
         <div className="participants">
-          {project_specialists.map((specialist, idx) => (
-            <div key={idx} className="specialization">
-              {specialist.profession.specialization}
+          {project_specialists.map((specialist, idx) => {
+            const specialization = specialist.profession.specialization;
+            const color = specializationColors[specialization] || '#CCCCCC';
+
+            return (
+              <div
+                key={idx}
+                className="specialization"
+                style={{ backgroundColor: color }}
+              >
+                {specialization}
+              </div>
+            );
+          })}
+          {restCount > 0 && (
+            <div className=" specialization specialization-count">
+              +{restCount}
             </div>
-          ))}
-          {restCount > 0 && <div className="specialization">+{restCount}</div>}
+          )}
         </div>
       </div>
       <div className="request">Откликнуться</div>

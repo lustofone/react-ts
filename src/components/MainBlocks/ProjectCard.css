@@ -48,5 +48,34 @@
 }
 
 .project-card .date {
+  color: #475569;
+  line-height: 19px;
   font-size: clamp(1rem, 2.5% + 0.6rem, 1.2rem);
+}
+
+.project-card .project-name {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+
+.project-card .project-specialization,
+.project-card .project-direction {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.project-card .participants {
+  display: flex;
+  gap: 8px;
+}
+
+.project-card .specialization {
+  border-radius: 15px;
+  padding: 4px 12px;
+}
+
+.project-card .specialization-count {
+  border: 1px solid #e2e8f0;
 }
