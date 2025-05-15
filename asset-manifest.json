@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-ts/static/css/main.c178cc0e.css",
-    "main.js": "/react-ts/static/js/main.6612effc.js",
+    "main.css": "/react-ts/static/css/main.ac15c0b7.css",
+    "main.js": "/react-ts/static/js/main.3eb1bdbd.js",
     "static/media/mission-bg.png": "/react-ts/static/media/mission-bg.b4a39fc29ff983f8d103.png",
     "static/media/join-us.png": "/react-ts/static/media/join-us.6ecbc1a86e0b5b636d13.png",
     "index.html": "/react-ts/index.html",
     "static/media/vk.svg": "/react-ts/static/media/vk.02bb2e08994e8da936fb20afdc3ae4f9.svg",
     "static/media/tg.svg": "/react-ts/static/media/tg.dbf74ab98837c20b31f6af656d71ac1a.svg",
-    "main.c178cc0e.css.map": "/react-ts/static/css/main.c178cc0e.css.map",
-    "main.6612effc.js.map": "/react-ts/static/js/main.6612effc.js.map"
+    "main.ac15c0b7.css.map": "/react-ts/static/css/main.ac15c0b7.css.map",
+    "main.3eb1bdbd.js.map": "/react-ts/static/js/main.3eb1bdbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.c178cc0e.css",
-    "static/js/main.6612effc.js"
+    "static/css/main.ac15c0b7.css",
+    "static/js/main.3eb1bdbd.js"
   ]
 }
