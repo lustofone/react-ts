@@ -4,22 +4,22 @@ import Icon from 'components/icons/IconSellector';
 import { IActualProject } from 'interfaces';
 
 const specializationColors: { [key: string]: string } = {
+  'Manual QA': '#F6BC5F',
+  'Automation QA': '#F6BC5F',
+  'Performance QA': '#F6BC5F',
+  'Systems Analyst': '#CCB3DA',
+  'Data Analyst': '#CCB3DA',
+  'Business Analyst': '#CCB3DA',
+  DevOps: '#A1D1FE',
+  'System Administration': '#A1D1FE',
+  'Project Manager': '#8BA9FF',
+  'UI/UX Designer': '#B8F18B',
+  'Graphic Designer': '#B8F18B',
+  Frontend: '#F28381',
   Software: '#FF5733',
-  Frontend: '#FF5733',
   Backend: '#33FF57',
-  DevOps: '#3357FF',
   Fullstack: '#3357FF',
-  'Automation QA': '#F3FF33',
-  'Manual QA': '#F6BD60',
-  'Performance QA': '#F3FF33',
-  'UI/UX Designer': '#FF33F3',
   Modile: '#FF33F3',
-  'System Administration': '#FF33F3',
-  'Graphic Designer': '#FF33F3',
-  'Project Manager': '#FF33F3',
-  'Systems Analyst': '#FF33F3',
-  'Business Analyst': '#FF33F3',
-  'Data Analyst': '#FF33F3',
 };
 
 const ProjectCard: React.FC<{ project: IActualProject }> = ({ project }) => {
